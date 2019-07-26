@@ -12,7 +12,8 @@ public class Circle {
 		return Math.PI*(radius*radius);
 	}
 	private static String formatNumber(double x) {
-		return Double.toString(Math.round(x*100)/100);
+		return String.format("%.2f", x);
+		//return Double.toString(Math.round(x*100)/100);
 	}
 	public String getFormattedCircumference() {
 		return "Circumference: " + formatNumber(getCircumference());
