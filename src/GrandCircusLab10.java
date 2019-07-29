@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class GrandCircusLab10 {
 	
 	private static double getRadius(Scanner sc) {
@@ -7,6 +8,7 @@ public class GrandCircusLab10 {
 				return sc.nextDouble();
 			} else {
 				System.err.println("Error: not a valid double.");
+				sc.nextLine();
 			}
 		}
 	}
